@@ -15,7 +15,7 @@ describe('ConvertPLNtoUSD', () => {
   it('should return NaN when input is empty', () => {
     expect(convertPLNToUSD()).toBeNaN();
   });
-  it('schould return "Error" if value is NaN or string', () => {
+  it('should return "Error" if value is NaN or string', () => {
       expect(convertPLNToUSD([])).toBe('Error');
       expect(convertPLNToUSD(null)).toBe('Error');
       expect(convertPLNToUSD({})).toBe('Error');
